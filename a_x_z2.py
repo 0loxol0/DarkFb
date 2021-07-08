@@ -109,7 +109,7 @@ def lisensi():
 def masuk():
 	os.system('reset')
 	print logo
-	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login email"
+	print "\033[1;91m║--\033[1;91m> \033[1;95m1.\033[1;96m Login Email"
 	print "\033[1;92m║--\033[1;91m> \033[1;95m2.\033[1;96m Login using token"
 	print "\033[1;93m║--\033[1;91m> \033[1;95m0.\033[1;96m Exit"
 	print "\033[1;95m║"
@@ -154,8 +154,8 @@ def login():
 		url = br.geturl()
 		if 'save-device' in url:
 			try:
-				sig= 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
-				data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
+				sig= 'api_key=53f97c52ff1944d5a977b0f2f9975c71credentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
+				data = {"api_key=53f97c52ff1944d5a977b0f2f9975c71","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
 				x=hashlib.new("md5")
 				x.update(sig)
 				a=x.hexdigest()
