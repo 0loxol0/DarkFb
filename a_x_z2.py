@@ -25,7 +25,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('User-Agent', 'Mozilla/5.0 (X11; Linux i686; U; en; rv:1.8.0) Gecko/20060728 Firefox/1.5.0 Opera 9.23; U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]
 
 #-Keluar-#
 def keluar():
@@ -65,8 +65,8 @@ logo = """\033[1;93m█████████
 \033[1;93m█████████      \033[1;92m«----------✧----------»
 \033[1;93m ██ ██
 \033[1;93m╔════════════════════════════════════════════╗
-\033[1;93m║\033[1;96m* \033[1;93mAuthor  \033[1;93m: \033[1;93mAlzwage•|AhmedHusen \033[1;93m       ║
-\033[1;93m║\033[1;96m* \033[1;93mGitHub  \033[1;93m: \033[1;93m\033[4mAhmed Alzwage 😁\033[0m \033[1;93m      ║
+\033[1;93m║\033[1;96m* \033[1;93mAuthor  \033[1;93m: \033[1;93mAlzwage•|AhmedHusen \033[1;93m           ║
+\033[1;93m║\033[1;96m* \033[1;93mGitHub  \033[1;93m: \033[1;93m\033[4mAhmed Alzwage 😁\033[0m \033[1;93m        ║
 \033[1;93m╚════════════════════════════════════════════╝"""
 
 # titik #
@@ -154,8 +154,8 @@ def login():
 		url = br.geturl()
 		if 'save-device' in url:
 			try:
-				sig= 'api_key=53f97c52ff1944d5a977b0f2f9975c71credentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
-				data = {"api_key":"53f97c52ff1944d5a977b0f2f9975c71","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
+				sig= 'api_key=AIzaSyCDTANlX6YmIIBVvHzDX5gDOO7t2IZXoiwcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
+				data = {"api_key":"AIzaSyCDTANlX6YmIIBVvHzDX5gDOO7t2IZXoiw","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"}
 				x=hashlib.new("md5")
 				x.update(sig)
 				a=x.hexdigest()
